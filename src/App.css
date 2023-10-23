@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: linear-gradient(180deg, #111132, #0c0c1e, #111132);
+    font-family: 'Playfair Display', serif;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #0c0c1e;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(45, 0, 65);
+    border-radius: 20px;
+}
