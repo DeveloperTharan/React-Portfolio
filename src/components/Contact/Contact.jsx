@@ -3,7 +3,7 @@ import Contatform from "./Contatform"
 
 function Contact() {    
   return (
-    <div className="mt-44 w-full grid 3xl:grid-cols-2">
+    <div className="mt-44 w-full grid 3xl:grid-cols-2" id="Contact">
       <div className="w-[80%] ml-10 sm:ml-16 lg:ml-28">
         <h1 className="text-7xl font-extrabold mb-5">Let's work together</h1>
         <div className="mb-4">
