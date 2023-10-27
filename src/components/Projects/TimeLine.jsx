@@ -20,12 +20,12 @@ import project1 from "../../assets/project5.png";
 import project2 from "../../assets/project3.png";
 import project3 from "../../assets/project2.png";
 import project4 from "../../assets/project1.png";
-import project5 from '../../assets/project4.png'
+import project5 from "../../assets/project4.png";
 import { FaHtml5, FaCss3, FaBootstrap, FaSass, FaReact } from "react-icons/fa6";
 import { BiLogoJavascript, BiLogoTailwindCss } from "react-icons/bi";
 import { AiOutlineGithub } from "react-icons/ai";
 import { PiShareFatLight } from "react-icons/pi";
-import { TbBrandRedux } from 'react-icons/tb'
+import { TbBrandRedux } from "react-icons/tb";
 import coiner_logo from "../../assets/coiner-logo.svg";
 import triber_logo from "../../assets/triber-logo.svg";
 import corso_logo from "../../assets/corso-logo.svg";
@@ -41,7 +41,7 @@ function TimeLine() {
       <Timeline className="relative lg:left-20 xl:left-36 2xl:left-52 3xl:left-1/2">
         {/* item 1 */}
         <TimelineItem>
-          <TimelineConnector/>
+          <TimelineConnector />
           <TimelineHeader>
             <TimelineIcon className="p-0">
               <Avatar
@@ -88,9 +88,9 @@ function TimeLine() {
                   Used Stacks :
                   <div className="flex gap-2">
                     <div className="flex gap-1">
-                    <FaReact className="text-[20px] text-blue-500" />
-                    <span className="text-[16px] text-white">+</span>
-                    <BiLogoJavascript className="text-[20px] text-yellow-700" />
+                      <FaReact className="text-[20px] text-blue-500" />
+                      <span className="text-[16px] text-white">+</span>
+                      <BiLogoJavascript className="text-[20px] text-yellow-700" />
                     </div>
                     <BiLogoTailwindCss className="text-[20px] text-blue-500" />
                   </div>
@@ -116,7 +116,7 @@ function TimeLine() {
         </TimelineItem>
         {/* item 2 */}
         <TimelineItem>
-          <TimelineConnector/>
+          <TimelineConnector />
           <TimelineHeader>
             <TimelineIcon className="p-0">
               <Avatar
@@ -156,18 +156,18 @@ function TimeLine() {
                   Netflix-Clone
                 </Typography>
                 <Typography className="text-gray-500 capitalize text-sm">
-                  Recreate The Netflix With Responsive Design And Implement TMDb Movie
-                  Api For Displaying Movie List.
+                  Recreate The Netflix With Responsive Design And Implement TMDb
+                  Movie Api For Displaying Movie List.
                 </Typography>
                 <Typography className="text-gray-300 capitalize text-sm mt-2 flex gap-3">
                   Used Stacks :
                   <div className="flex gap-2">
-                  <div className="flex gap-1">
-                    <FaReact className="text-[20px] text-blue-500" />
-                    <span className="text-[16px] text-white">+</span>
-                    <BiLogoJavascript className="text-[20px] text-yellow-700" />
+                    <div className="flex gap-1">
+                      <FaReact className="text-[20px] text-blue-500" />
+                      <span className="text-[16px] text-white">+</span>
+                      <BiLogoJavascript className="text-[20px] text-yellow-700" />
                     </div>
-                    <TbBrandRedux className="text-[20px] text-purple-400"/>
+                    <TbBrandRedux className="text-[20px] text-purple-400" />
                     <BiLogoTailwindCss className="text-[20px] text-blue-500" />
                   </div>
                 </Typography>
@@ -192,7 +192,7 @@ function TimeLine() {
         </TimelineItem>
         {/* item 3 */}
         <TimelineItem>
-          <TimelineConnector/>
+          <TimelineConnector />
           <TimelineHeader>
             <TimelineIcon className="p-0">
               <Avatar
@@ -266,7 +266,7 @@ function TimeLine() {
         </TimelineItem>
         {/* item 4 */}
         <TimelineItem>
-          <TimelineConnector/>
+          <TimelineConnector />
           <TimelineHeader>
             <TimelineIcon className="p-0">
               <Avatar
