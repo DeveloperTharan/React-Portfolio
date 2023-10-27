@@ -87,7 +87,7 @@ function TimeLine() {
                 <Typography className="text-gray-300 capitalize text-sm mt-2 flex gap-3">
                   Used Stacks :
                   <div className="flex gap-2">
-                    <div className="flex gap-2">
+                    <div className="flex">
                     <FaReact className="text-[20px] text-blue-500" />
                     <span className="text-[16px] text-white">+</span>
                     <BiLogoJavascript className="text-[20px] text-yellow-700" />
@@ -162,7 +162,11 @@ function TimeLine() {
                 <Typography className="text-gray-300 capitalize text-sm mt-2 flex gap-3">
                   Used Stacks :
                   <div className="flex gap-2">
-                  <FaReact className="text-[20px] text-blue-500" />
+                  <div className="flex">
+                    <FaReact className="text-[20px] text-blue-500" />
+                    <span className="text-[16px] text-white">+</span>
+                    <BiLogoJavascript className="text-[20px] text-yellow-700" />
+                    </div>
                     <TbBrandRedux className="text-[20px] text-purple-400"/>
                     <BiLogoTailwindCss className="text-[20px] text-blue-500" />
                   </div>
