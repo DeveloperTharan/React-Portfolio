@@ -87,7 +87,11 @@ function TimeLine() {
                 <Typography className="text-gray-300 capitalize text-sm mt-2 flex gap-3">
                   Used Stacks :
                   <div className="flex gap-2">
+                    <div className="flex gap-5">
                     <FaReact className="text-[20px] text-blue-500" />
+                    <span className="text-[16px] text-white">+</span>
+                    <BiLogoJavascript className="text-[20px] text-yellow-700" />
+                    </div>
                     <BiLogoTailwindCss className="text-[20px] text-blue-500" />
                   </div>
                 </Typography>
