@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { BsFiletypePdf } from "react-icons/bs";
-import Resume from "../../assets/DHARANITHARAN-RESUME.pdf";
+import Resume from "../../assets/Resume.pdf";
 import Aos from "aos";
 import "aos/dist/aos.css";
 

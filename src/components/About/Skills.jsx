@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { FaHtml5, FaCss3, FaJava, FaBootstrap, FaSass, FaReact, } from "react-icons/fa6";
-import { BiLogoJavascript, BiLogoTailwindCss } from "react-icons/bi";
+import { BiLogoJavascript, BiLogoTailwindCss, BiLogoTypescript } from "react-icons/bi";
 import { SiMysql } from "react-icons/si";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -34,6 +34,7 @@ function Skills() {
         </div>
         <div className="flex sm:gap-1 md:gap-2">
           <BiLogoJavascript className="text-[20px] sm:text-[22px] lg:text-[25px] 2xl:text-[27px] text-yellow-700" />
+          <BiLogoTypescript className="text-[20px] sm:text-[22px] lg:text-[25px] 2xl:text-[27px] text-blue-700" />
           <FaReact className="text-[20px] sm:text-[22px] lg:text-[25px] 2xl:text-[27px] text-blue-500" />
         </div>
         <FaJava className="text-[20px] sm:text-[22px] lg:text-[25px] 2xl:text-[27px] text-blue-gray-500" />
