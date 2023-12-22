@@ -1,5 +1,5 @@
 import React from 'react'
-import TimeLine from './TimeLine'
+import Details from './Details'
 
 function Projects() {
   return (
@@ -8,7 +8,7 @@ function Projects() {
         <h1 className="text-2xl 3xl:text-5xl">Project's</h1>
         <div className="h-[1.6px] 4xl:h-[2.5px] bg-white w-10 4xl:w-14 my-1"></div>
       </div>
-      <TimeLine/>   
+      <Details/>   
     </div>
   )
 }

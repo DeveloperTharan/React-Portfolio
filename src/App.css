@@ -12,6 +12,7 @@ body{
     color: #fff;
     background: linear-gradient(180deg, #111132, #0c0c1e, #111132);
     font-family: 'Playfair Display', serif;
+    height: 100%;
 }
 
 ::-webkit-scrollbar{
