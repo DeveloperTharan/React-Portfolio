@@ -1,5 +1,3 @@
-import React from "react";
-
 import { PiInstagramLogoLight } from "react-icons/pi";
 import { Link } from "react-router-dom";
 import { ProjectCard } from "./components/project-card";

@@ -1,5 +1,3 @@
-import React from "react";
-
 export const Skills = () => {
   return (
     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center items-center">

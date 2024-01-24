@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Button, Image, Link } from "@nextui-org/react";
 
 import { HiReceiptPercent } from "react-icons/hi2";

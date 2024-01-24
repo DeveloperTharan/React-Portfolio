@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Button, Card, CardFooter, Image, Link } from "@nextui-org/react";
 
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";

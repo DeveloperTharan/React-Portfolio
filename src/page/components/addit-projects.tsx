@@ -1,5 +1,3 @@
-import React from "react";
-
 import { GoProject } from "react-icons/go";
 import { RiGlobeLine } from "react-icons/ri";
 import { LuBookOpenCheck } from "react-icons/lu";
