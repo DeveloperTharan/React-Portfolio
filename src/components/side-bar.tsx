@@ -39,25 +39,25 @@ export const SideBar = () => {
       id: 1,
       name: "Linkedin",
       Icon: <SlSocialLinkedin className="text-blue-600" />,
-      href: "",
+      href: "https://www.linkedin.com/in/dharanitharan-p/",
     },
     {
-      id: 1,
+      id: 2,
       name: "Github",
       Icon: <VscGithubAlt className="text-green-600" />,
-      href: "",
+      href: "https://github.com/DeveloperTharan",
     },
     {
-      id: 1,
+      id: 3,
       name: "Gmail",
       Icon: <IoMailOutline className="text-orange-600" />,
-      href: "",
+      href: "https://www.gmail.com/tharan120723@gmail.com",
     },
     {
-      id: 1,
+      id: 4,
       name: "Instagram",
       Icon: <PiInstagramLogoLight className="text-pink-600" />,
-      href: "",
+      href: "https://www.instagram.com/thxran_._/",
     },
   ];
 

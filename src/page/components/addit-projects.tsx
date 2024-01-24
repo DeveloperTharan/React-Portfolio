@@ -29,7 +29,7 @@ export const AdditionalProjects = () => {
       icon: RiGlobeLine,
     },
     {
-      id: 1,
+      id: 4,
       name: "Js-mini-projects",
       github: "https://github.com/DeveloperTharan/JS-mini-projects",
       techstacks: "HTML5, CSS3, Javascript.",
@@ -41,11 +41,10 @@ export const AdditionalProjects = () => {
       <h1 className="text-lg text-gray-300 font-medium">More Projects</h1>
       <div className="flex flex-col gap-y-2 w-full mt-3">
         {projects.map((items) => (
-          <>
+          <div key={items.id} className="w-full">
             <Link
               className="flex flex-row items-center gap-x-3 text-gray-500"
               role="button"
-              key={items.id}
               href={items.github}
             >
               <items.icon className="h-4 w-4" />
@@ -53,7 +52,7 @@ export const AdditionalProjects = () => {
               <IoIosArrowRoundForward className="h-6 w-6 ml-auto" />
             </Link>
             <span className="text-[10px] mb-2">{items.techstacks}</span>
-          </>
+          </div>
         ))}
       </div>
     </div>

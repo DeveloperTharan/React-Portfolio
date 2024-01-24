@@ -1,6 +1,6 @@
 export const Skills = () => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center items-center">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 items-center">
       <div className="w-44 h-48 px-2 py-3 bg-[#14131a] rounded-lg shadow-2xl">
         <h1 className="font-medium">Programming</h1>
         <div className="flex flex-row flex-wrap flex-grow justify-start items-center my-2 gap-3">
