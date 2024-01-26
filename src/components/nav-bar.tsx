@@ -1,20 +1,13 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-
-import { Button } from "@nextui-org/react";
 
 import { SideBar } from "./side-bar";
 
-import { CiMenuFries, CiHome } from "react-icons/ci";
-import { IoPersonOutline, IoCloseOutline } from "react-icons/io5";
+import { CiMenuFries } from "react-icons/ci";
+import { IoCloseOutline } from "react-icons/io5";
+import { Contact } from "../page/contact";
 
 export const NavBar = () => {
   const [Open, setOpen] = useState(false);
-
-  const navigate = useNavigate();
-  const pathname = window.location.pathname;
-
-  const isContactPage = pathname.endsWith("/contact");
 
   return (
     <div className="flex flex-row justify-between items-center w-ful h-full">
@@ -23,27 +16,8 @@ export const NavBar = () => {
         <div className="h-3 w-3 rounded-full bg-green-600" />
       </div>
       <div className="flex flex-row gap-x-4 items-center">
-        {!isContactPage ? (
-          <Button
-            size="sm"
-            variant="solid"
-            color="success"
-            endContent={<IoPersonOutline />}
-            onClick={() => navigate("/contact")}
-          >
-            Contect Me
-          </Button>
-        ) : (
-          <Button
-            size="sm"
-            variant="solid"
-            color="success"
-            endContent={<CiHome />}
-            onClick={() => navigate("/")}
-          >
-            Home
-          </Button>
-        )}
+        <Contact>Contect Me</Contact>
+
         <div className="lg:hidden" role="button" onClick={() => setOpen(true)}>
           <CiMenuFries className="h-7 w-7" />
         </div>
