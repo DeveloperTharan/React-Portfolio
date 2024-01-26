@@ -21,7 +21,7 @@ export const ProjectCard = () => {
         "NextJs, Tailwindcss, NextUi, Postgres db, Clerk auth, Prisma ORM, Zod, UplodeThings.",
       image: "/udemy.webp",
       github: "https://github.com/DeveloperTharan/udemy-clone",
-      livedemo: "/",
+      livedemo: "https://udemy-clone-orcin.vercel.app",
     },
     {
       id: 2,

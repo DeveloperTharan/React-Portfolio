@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
 
 import {
   Button,
@@ -9,15 +10,13 @@ import {
   useDisclosure,
   Input,
   Textarea,
-  Image,
 } from "@nextui-org/react";
 
 import { IoIosMail } from "react-icons/io";
 import { BsChatRightText } from "react-icons/bs";
 import { IoPersonOutline, IoPersonCircleOutline } from "react-icons/io5";
-/* import { Resend } from "resend"; */
-
-/* const resend = new Resend(process.env.RESEND_EMAIL_API_KEY!); */
+import { useRef } from "react";
+import { toast } from "sonner";
 
 export const Contact = ({ children }: { children: React.ReactNode }) => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -28,17 +27,24 @@ export const Contact = ({ children }: { children: React.ReactNode }) => {
     formState: { errors, isSubmitting, isValid },
   } = useForm();
 
-  const onSubmit = (data: any) => {
-   /*  resend.emails.send({
-      from: "DTFolio@resend.dev",
-      to: data.email,
-      subject: `Contact by ${data.name}`,
-      html: `<p>${data.message}</p>`,
-    }); */
-    console.log(data);
-    console.log("name",data.Name);
-    console.log("email",data.Email);
-    console.log("message",data.Message);
+  const form = useRef(null);
+
+  const onSubmit = () => {
+    const SERVICE_ID = "service_bsm3gmn";
+    const TEMPLATE_ID = "template_7cbjxck";
+    const PUBLIC_KEY = "xC-f-ISh8dASjlzQu";
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current!, PUBLIC_KEY).then(
+      (response) => {
+        console.log("sended", response);
+        toast.success("send sucessfully");
+        onOpenChange();
+      },
+      (error) => {
+        console.log("error not sended", error);
+        toast.error("error! try again...");
+      }
+    );
   };
 
   return (
@@ -69,6 +75,7 @@ export const Contact = ({ children }: { children: React.ReactNode }) => {
                 <form
                   onSubmit={handleSubmit(onSubmit)}
                   className="flex flex-col gap-4"
+                  ref={form}
                 >
                   <Input
                     label="Email"
@@ -78,14 +85,7 @@ export const Contact = ({ children }: { children: React.ReactNode }) => {
                     startContent={
                       <IoIosMail className="text-xl text-default-400 pointer-events-none flex-shrink-0" />
                     }
-                    endContent={
-                      <div className="pointer-events-none flex items-center">
-                        <span className="text-default-400 text-small">
-                          @gmail.com
-                        </span>
-                      </div>
-                    }
-                    {...register("Email", {
+                    {...register("user_email", {
                       required: true,
                       pattern: /@gmail.com/i,
                     })}
@@ -102,7 +102,7 @@ export const Contact = ({ children }: { children: React.ReactNode }) => {
                     startContent={
                       <IoPersonCircleOutline className="text-xl text-default-400 pointer-events-none flex-shrink-0" />
                     }
-                    {...register("Name", { required: true, min: 3 })}
+                    {...register("user_name", { required: true, min: 3 })}
                     errorMessage={errors.Name && "name is required"}
                     autoComplete="off"
                   />
@@ -114,7 +114,7 @@ export const Contact = ({ children }: { children: React.ReactNode }) => {
                     startContent={
                       <BsChatRightText className="text-sm text-default-400 pointer-events-none flex-shrink-0 mt-1" />
                     }
-                    {...register("Message", {
+                    {...register("message", {
                       required: true,
                       max: 1000,
                       min: 10,
@@ -128,18 +128,10 @@ export const Contact = ({ children }: { children: React.ReactNode }) => {
                       Close
                     </Button>
                     <Button
-                      color="success"
+                      color={!isValid || isSubmitting ? "default" : "success"}
                       type="submit"
                       disabled={!isValid || isSubmitting}
-                      endContent={
-                        isValid && (
-                          <Image
-                            src="/email-send.gif"
-                            alt="gif"
-                            className="w-5 h-5 mix-blend-color-burn"
-                          />
-                        )
-                      }
+                      value="Send"
                     >
                       send
                     </Button>

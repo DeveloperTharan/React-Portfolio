@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home } from "./page/home";
 import { About } from "./page/about";
 import { MainLayout } from "./components/main-layout";
+import { Toaster } from "sonner";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
           </Routes>
         </MainLayout>
       </BrowserRouter>
+      <Toaster position="bottom-right" theme="dark" duration={5000} />
     </>
   );
 }
