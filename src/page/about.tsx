@@ -2,11 +2,8 @@ import { Button, Image, Link } from "@nextui-org/react";
 
 import { HiReceiptPercent } from "react-icons/hi2";
 import { AiOutlineFilePdf } from "react-icons/ai";
-import { useNavigate } from "react-router-dom";
 
 export const About = () => {
-  const navigat = useNavigate();
-
   return (
     <div className="flex flex-col gap-3 w-full">
       <div
@@ -32,11 +29,16 @@ export const About = () => {
               variant="solid"
               color="success"
               startContent={<HiReceiptPercent />}
-              onClick={() => navigat("/contact")}
             >
-              Hier Me
+              <Link
+                href="https://mail.google.com/mail/u/0/#sent?compose=GTvVlcSGLdhVHTWTdzwGXqvnSCMvrffTfXQgNJdGLcWFpFPxCvvvsfqjKSCvMmhsThNSCZNQPCdfn"
+                target="_blank"
+                className="text-black text-xs"
+              >
+                Hier Me
+              </Link>
             </Button>
-            <Link href="" download={"/logo.svg"}>
+            <Link href="" download={"/resume.pdf"}>
               <Button
                 size="sm"
                 variant="solid"

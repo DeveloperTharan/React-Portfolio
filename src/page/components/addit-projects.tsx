@@ -1,46 +1,13 @@
-import { GoProject } from "react-icons/go";
-import { RiGlobeLine } from "react-icons/ri";
-import { LuBookOpenCheck } from "react-icons/lu";
-import { SiAltiumdesigner } from "react-icons/si";
-import { IoIosArrowRoundForward } from "react-icons/io";
 import { Link } from "@nextui-org/react";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { Projects } from "../../constants/add-project-constants";
 
 export const AdditionalProjects = () => {
-  const projects = [
-    {
-      id: 1,
-      name: "corso",
-      github: "https://github.com/DeveloperTharan/corso",
-      techstacks: "HTML5, CSS3, Bootstrap, Sass, Javascript.",
-      icon: LuBookOpenCheck,
-    },
-    {
-      id: 2,
-      name: "MEG",
-      github: "https://github.com/DeveloperTharan/MEG",
-      techstacks: "HTML5, CSS3, Bootstrap, Sass, Javascript.",
-      icon: SiAltiumdesigner,
-    },
-    {
-      id: 3,
-      name: "Tripal Explore",
-      github: "https://github.com/DeveloperTharan/Triber-Explore",
-      techstacks: "HTML5, CSS3, Bootstrap, Sass, Javascript.",
-      icon: RiGlobeLine,
-    },
-    {
-      id: 4,
-      name: "Js-mini-projects",
-      github: "https://github.com/DeveloperTharan/JS-mini-projects",
-      techstacks: "HTML5, CSS3, Javascript.",
-      icon: GoProject,
-    },
-  ];
   return (
     <div className="w-full h-auto bg-[#14131a] p-3 rounded-lg shadow-2xl">
       <h1 className="text-lg text-gray-300 font-medium">More Projects</h1>
       <div className="flex flex-col gap-y-2 w-full mt-3">
-        {projects.map((items) => (
+        {Projects.map((items) => (
           <div key={items.id} className="w-full">
             <Link
               className="flex flex-row items-center gap-x-3 text-gray-500"
