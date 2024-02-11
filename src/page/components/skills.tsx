@@ -51,7 +51,7 @@ export const Skills = () => {
             MySQL
           </span>
           <span className="px-2 py-[3px] text-tiny bg-[#1c1b23] rounded-md">
-            GraphQL
+            PostgreSql
           </span>
         </div>
       </div>
@@ -72,6 +72,15 @@ export const Skills = () => {
           </span>
           <span className="px-2 py-[3px] text-tiny bg-[#1c1b23] rounded-md border border-green-800">
             Clerk
+          </span>
+          <span className="px-2 py-[3px] text-tiny bg-[#1c1b23] rounded-md">
+            Jira
+          </span>
+          <span className="px-2 py-[3px] text-tiny bg-[#1c1b23] rounded-md">
+            Prisma ORM
+          </span>
+          <span className="px-2 py-[3px] text-tiny bg-[#1c1b23] rounded-md">
+            npm
           </span>
         </div>
       </div>
