@@ -1,16 +1,23 @@
 import { Projects } from "../../constants/project-constant";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import { Button, Card, CardFooter, Image, Link } from "@nextui-org/react";
+import { useRef } from "react";
 
 export const ProjectCard = () => {
+  const sliderRef = useRef<HTMLDivElement>(null);
+
   const slideLeft = () => {
-    var slider = document.getElementById("slider")!;
-    slider.scrollLeft = slider.scrollLeft - 350;
+    if (sliderRef.current) {
+      var slider = sliderRef.current;
+      slider.scrollLeft -= 350;
+    }
   };
 
   const slideRight = () => {
-    var slider = document.getElementById("slider")!;
-    slider.scrollLeft = slider.scrollLeft + 350;
+    if (sliderRef.current) {
+      var slider = sliderRef.current;
+      slider.scrollLeft += 350;
+    }
   };
 
   return (
@@ -23,7 +30,7 @@ export const ProjectCard = () => {
         onClick={slideLeft}
       />
       <div
-        id={"slider"}
+        ref={sliderRef}
         className="w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative"
       >
         {Projects.map((item, index) => (

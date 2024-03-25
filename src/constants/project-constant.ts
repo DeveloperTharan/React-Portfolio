@@ -1,6 +1,15 @@
 export const Projects = [
   {
     id: 1,
+    name: "Threads Clone",
+    techstacks:
+      "NextJs, Tailwindcss, NextUi, Postgres db, Authjs, Prisma ORM, Zod, Edgestore.",
+    image: "/Threads.png",
+    github: "https://github.com/DeveloperTharan/Threads-Clone",
+    livedemo: "https://threads-thxran.vercel.app",
+  },
+  {
+    id: 2,
     name: "Udemy Clone",
     techstacks:
       "NextJs, Tailwindcss, NextUi, Postgres db, Clerk auth, Prisma ORM, Zod, UplodeThings.",
@@ -9,7 +18,7 @@ export const Projects = [
     livedemo: "https://udemy-clone-orcin.vercel.app",
   },
   {
-    id: 2,
+    id: 3,
     name: "DropBox Clone",
     techstacks:
       "NextJs, Tailwindcss, Shadcn/ui, Convex db, Clerk auth, Edgestore.",
@@ -18,7 +27,7 @@ export const Projects = [
     livedemo: "https://dropbox-clone-gray.vercel.app",
   },
   {
-    id: 3,
+    id: 4,
     name: "Notion Clone",
     techstacks:
       "NextJs, Tailwindcss, DasiUi, Convex db, Clerk auth, Edgestore.",
@@ -27,7 +36,7 @@ export const Projects = [
     livedemo: "https://notion-clone-six-sooty.vercel.app",
   },
   {
-    id: 4,
+    id: 5,
     name: "ebay Clone",
     techstacks:
       "NextJs, Tailwindcss, Shadcn/ui, Postgres db, Clerk auth, Prisma ORM, Zod.",
@@ -36,7 +45,7 @@ export const Projects = [
     livedemo: "/",
   },
   {
-    id: 5,
+    id: 6,
     name: "Netflix Clone",
     techstacks: "ReactJs, Redux, Tailwindcss, Firebase auth, TMDB API.",
     image: "/netflix.webp",
@@ -44,7 +53,7 @@ export const Projects = [
     livedemo: "https://netflix-clone-eight-fawn.vercel.app",
   },
   {
-    id: 6,
+    id: 7,
     name: "Coiner Crypto",
     techstacks: "ReactJs, Tailwindcss, Material Tailwind, Rapied API.",
     image: "/coiner.webp",
