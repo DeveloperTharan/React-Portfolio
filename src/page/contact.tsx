@@ -30,9 +30,9 @@ export const Contact = ({ children }: { children: React.ReactNode }) => {
   const form = useRef(null);
 
   const onSubmit = () => {
-    const SERVICE_ID = "service_bsm3gmn";
-    const TEMPLATE_ID = "template_7cbjxck";
-    const PUBLIC_KEY = "xC-f-ISh8dASjlzQu";
+    const SERVICE_ID = process.env.SERVICE_ID!;
+    const TEMPLATE_ID = process.env.TEMPLATE_ID!;
+    const PUBLIC_KEY = process.env.PUBLIC_KEY!;
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current!, PUBLIC_KEY).then(
       (response) => {
@@ -145,7 +145,7 @@ export const Contact = ({ children }: { children: React.ReactNode }) => {
                 <div className="flex flex-row gap-x-2 justify-center items-center mb-6">
                   <IoIosMail className="text-xl text-default-500 pointer-events-none flex-shrink-0" />
                   <span className="text-sm text-default-500">
-                    tharan130723@gmail.com
+                    dharanitharanps@gmail.com
                   </span>
                 </div>
               </ModalBody>

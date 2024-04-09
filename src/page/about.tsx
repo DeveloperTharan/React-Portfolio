@@ -31,14 +31,14 @@ export const About = () => {
               startContent={<HiReceiptPercent />}
             >
               <Link
-                href="https://mail.google.com/mail/u/0/#sent?compose=GTvVlcSGLdhVHTWTdzwGXqvnSCMvrffTfXQgNJdGLcWFpFPxCvvvsfqjKSCvMmhsThNSCZNQPCdfn"
+                href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=dharanitharanps@gmail.com"
                 target="_blank"
                 className="text-black text-xs"
               >
                 Hier Me
               </Link>
             </Button>
-            <Link href="" download={"/resume.pdf"}>
+            <Link href="/resume.pdf" download={"/resume.pdf"}>
               <Button
                 size="sm"
                 variant="solid"
