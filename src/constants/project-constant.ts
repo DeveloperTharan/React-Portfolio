@@ -33,7 +33,7 @@ export const Projects = [
       "NextJs, Tailwindcss, DasiUi, Convex db, Clerk auth, Edgestore.",
     image: "/notion.svg",
     github: "https://github.com/DeveloperTharan/Notion-clone",
-    livedemo: "https://notion-clone-six-sooty.vercel.app",
+    livedemo: "https://notion-clone-five-pi.vercel.app",
   },
   {
     id: 5,
